@@ -3,14 +3,8 @@
 <head>
   <title>DRAGON</title>
   <style>
-  @-webkit-keyframes flight
-  {
-    from {
-      left: 0;
-    }
-    to {
-      left: 50%;
-    }
+  body {
+    overflow-x: hidden;
   }
   @keyframes flight
   {
@@ -18,22 +12,19 @@
       left: 0;
     }
     to {
-      left: 50%;
+      left: 100%;
     }
   }
 
   #dragon {
     text-decoration: none;
     padding-right: 20px;
-    left: 50%;
+    left: 100%;
     position: absolute;
-    -webkit-animation: flight 5s;
     animation: flight 5s;
   }
 
   #dragon img {
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     -ms-transition: all 1s ease-in-out;
     border-radius:60px;
