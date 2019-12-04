@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DRAGON</title>
+  <style>
+  @-webkit-keyframes flight
+  {
+    from {
+      left: 0;
+    }
+    to {
+      left: 50%;
+    }
+  }
+  @keyframes flight
+  {
+    from {
+      left: 0;
+    }
+    to {
+      left: 50%;
+    }
+  }
+
+  #dragon {
+    text-decoration: none;
+    padding-right: 20px;
+    left: 50%;
+    position: absolute;
+    -webkit-animation: flight 5s;
+    animation: flight 5s;
+  }
+
+  #dragon img {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    border-radius:60px;
+    transition-duration: 1s;
+  }
+  </style>
+</head>
+<body>
+  <div id="dragon"><img src="http://bestanimations.com/Fantasy/Dragons/dragon-animated-gif-60.gif" /></div>
+</body>
+</html>
