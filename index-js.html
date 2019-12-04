@@ -4,6 +4,7 @@
   <title>DRAGON</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="vendor/jquery.keyframes.min.js"></script>
+  <script src="vendor/jquery.konami.min.js"></script>
 </head>
 <body>
   <div>
@@ -63,13 +64,9 @@
     }
 
     window.onload = function() {
-      let count = 0;
-      $("#trigger").on("click", function () {
-        count++;
-        if (count == 3) {
-          $("#dragon").resetKeyframe(reset());
+      $(window).konami({
+        cheat: function() {
           dragonflight();
-          count = 0;
         }
       });
     }
